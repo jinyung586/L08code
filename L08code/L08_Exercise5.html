@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yong Jin Yung</title>
+  <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+    float: left;
+    width: 30%;
+    
+    background: #ccc;
+    padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    }
+    </style>
+</head>
+<body>
+    <h1>My Webpage</h1>
+  <p>
+    Hi I'm Yong Jin Yung! Welcome to my webpage.
+  </p>
+  <img src="Anonymous.jpg"alt="Profile Picture">
+
+  <p>
+    You can connect with me at my Facebook account <a href="https://bit.ly/fcc-relaxing-cat">here</a>!
+  </p>
+  <nav>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">TikTok</a></li>
+    </ul>
+  <h2>My hobbies are</h2>
+  <p>
+    <ul>
+        <li>Playing with my <a href="https://bit.ly/fcc-relaxing-cat">cat</a></li>
+        <li>Playing games</li>
+        <li>Building websites with HTML and CSS :p</li>
+    </ul>
+    <img src="GettyImages-1157341247-f94306ed66b2444c837cd751007fbdef.jpg" width="20%" alt="Profile Picture">
+    <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds">cat</a></p>
+  </nav>
+    <article>
+      <h1>Playing games</h1>
+      <div>The game I like to play is ARK survival evloved.</div>
+    </article>
+    <footer>
+      <p>Thank You</p>
+    </footer>
+
+</body>
+</html>
